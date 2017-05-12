@@ -1,0 +1,195 @@
+﻿body,html{min-width:1170px;background-color:#f5f5f5;font-family: "Microsoft YaHei";color:#333333;}
+a:focus {outline: none;}  /*取消点击链接后遗留的虚线*/
+a:link,a:visited,a:active,a:hover{text-decoration: none;}
+.red{color:red;}
+.ml15{margin-left:15px;}
+#transmark{display:none;}  /*jquery生成的span*/
+/* 登录 */
+#f-index {background: url("../images/login_bg.jpg");-moz-background-size:cover;-ms-background-size:cover;-webkit-background-size:cover;background-size:cover;; height: 100%;width:100%;position:absolute;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/login_bg.jpg',sizingMethod=scale);min-width:1170px;}
+#f-index .container {position: relative;width:1170px;}
+#f-index h1 {color: #fff;margin-top: 110px;margin-bottom: 20px;}
+#f-index small {background: #fff;border-radius: 10px;padding: 0 5px;}
+.f-login-ban{background:url('../images/login_ban.png') no-repeat;width:421px;height:307px;margin-top:120px;float:right;}
+.f-iLogo a {display: block;width: 282px;height: 126px;background: url("../images/logo_index.png") no-repeat;}
+.f-iform {padding: 50px 80px 80px;background: #F7F7F7;}
+#login label{font-weight:500;color:#999;}
+.error{
+    color: #ff0000;
+    margin: 5px 0 10px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+.h-line {
+    background-color: #134f88;
+    height: 60px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    width: 100%;
+}
+/*头部*/
+.f-header{background-color:#0099cb;padding:10px;color:#fff;position:fixed;width:100%;z-index: 1001;min-width:1170px;}
+.f-header h1{width:50%;height:27px;background: url('../images/h-logo.png') no-repeat;display:inline-block;margin:0 20px 0;font-size: 15px;font-weight: 600;line-height: 27px;text-indent: 100px;}
+.f-login{float:right;margin-bottom:0;}
+.f-face img{width:30px;height:30px;border-radius:15px;border:1px solid #86b3c2;}
+.f-login a,.f-login a:hover{color:#fff;}
+
+/*侧栏*/
+.f-nav{position:fixed;width:200px;height:100%;overflow:hidden;color:#fff;background-color:#293038;top:50px;left:0;z-index: 1000}
+.f-nav li > a{display:block;color:#fff;height:45px;line-height: 45px;}
+.f-unfold,.f-sub > a,.f-sub > a:hover{background:url('../images/aside.png') no-repeat}
+.f-unfold{background-position:50% 0;cursor:pointer;height:45px;}
+.f-sub > a{background-color:#23282e;border-bottom:1px solid #293038;}
+.f-sub  a{padding-left:60px;}
+.f-sub a:hover{background-color:#37424f;}
+a.f-curr{background-color:#0099cb!important;}
+a.f-channel,a.f-channel:hover{background-position:20px -42px;}
+a.f-stream,a.f-stream:hover{background-position:20px -89px;}
+a.f-link,a.f-link:hover{background-position:20px -183px;}
+a.f-device,a.f-device:hover{background-position:20px -250px;}
+a.f-origin,a.f-origin:hover{background-position:20px -285px;}
+a.f-user,a.f-user:hover{background-position: 20px -135px;}
+a.f-total,a.f-total:hover{background-position:20px -219px;}
+a.f-device-manage,a.f-device-manage:hover{background-position: 20px -90px}
+
+a.f-collection-manage,a.f-collection-manage:hover{background-position:20px -138px;}
+a.f-oper-record,a.f-oper-record:hover{background-position:20px -180px;}
+
+/*主体*/
+.f-page{min-height:695px;background-color:#f5f5f5;margin-left:200px;padding:90px 20px 20px;overflow: hidden;word-break:break-all;position:relative;} /*word-break:break-all;强制换行*/
+/*每页显示数量*/
+.numSelect {display: inline-block;position: relative;top: -2px;margin: 0 10px;}
+/* chosen下拉 */
+.numSelect .chosen-container-single .chosen-drop{border-top: 1px solid #ccc;padding-top: 10px;padding-bottom: 5px;}
+
+/*气泡提示*/
+#f-tip{position:absolute;display:none;z-index: 100}
+.f-tip {position:relative;background:#23282e;border-radius:5px;color:#fff;line-height:35px;padding:0 15px;height:35px;}
+.f-tip .arrow,.f-netUrl-tip .arrow {position:absolute;top:8px;left:-16px;width:0;height:0;font-size:0;border:solid 8px;border-color:transparent #23282e transparent transparent;}
+
+/*模态框*/
+.f-modal .modal-content{background:#0099cb;color:#fff;}
+.f-modal .f-modal-header{padding:10px;}
+.f-modal .f-modal-footer{height:10px;}
+.f-modal .f-modal-body{margin:0 10px;background:#fff;color:#000;border-radius: 5px;padding:10px;}
+.f-modal .f-modal-header>h4{font-size: 20px;}
+.f-modal .f-modal-header>.close{opacity:1;font-weight:normal;color:#fff;font-size:28px;}
+/*modal*/
+.modal .modal-content {
+    padding: 0px 10px 10px 10px;
+    background-color: #0099cb;
+}
+
+.modal .modal-header {
+    padding: 5px 0px 5px 5px;
+    color: #fff;
+    border-bottom: 0px;
+}
+
+.close {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.m-close {
+    width: 22px;
+    height: 23px;
+    background: url(../images/tc-biaotitubiao.png);
+    background-position: -1px 0px;
+}
+
+.modal-body {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/*模态框表单样式*/
+.f-form-horizontal{padding-top:30px;}
+.f-form-horizontal .form-group{margin-bottom:25px;}
+.f-form-horizontal label{font-weight:normal;font-size:15px;}
+.form-horizontal .textLeft{text-align:left;}
+/*通用按钮*/
+.f-btn{background: none;border:1px solid #a0a4a6;padding:5px 10px;border-radius:3px;vertical-align: middle;}
+.f-btn:hover{background-color:#ededef;}
+/*无边框按钮*/
+.fbtn-link{border:0;}
+.fbtn-link:hover{background:none;}
+/*按钮样式*/
+.fbtn-ok-svg,.fbtn-miss-svg,.f-local,#f-netUrl a,.fbtn-show-svg{background:url('../Images/btn_bg.png') no-repeat}
+/*确认取消按钮*/
+.fbtn-ok,.fbtn-ok:hover{border-color:#73bce5;background-color:#f3fdff;font-size: 15px;padding:7px 10px 5px;}
+.fbtn-miss,.fbtn-miss:hover{border-color:#a2a3a5;background-color:#fff;font-size: 15px;padding:7px 10px 5px;}
+.fbtn-show,.fbtn-show:hover{border-color:#fcbcf8;background-color:#faebf9;font-size: 15px;padding:7px 10px 5px;}
+/*确认取消按钮图标*/
+.fbtn-ok-svg,.fbtn-miss-svg,.fbtn-show-svg{width:17px;height:17px;overflow:hidden;display:inline-block;vertical-align:middle;margin-top:-2px;}
+.fbtn-ok-svg{background-position:0 -20px;}
+.fbtn-miss-svg{background-position: 0 -37px;}
+.fbtn-show-svg{background-position:0 -54px;}
+.fbtn-ok:active,.fbtn-miss:active{background-color:#0da2cd;color:#fff;}
+
+/* alert、conform */
+#delModal {display: none;position: absolute; z-index: 10001;}
+.mask {  position: fixed;  top: 0; left: 0;  width: 100%;  height: 100%;  background: #000;  opacity: 0.5;  filter: alpha(opacity=50);  display: none;  z-index: 10000;  }
+#delModal .modal-header, #delModal .modal-footer {  border: 0  }
+#delModal p {  text-align: center;  font-size: 18px;  padding: 20px 0; margin:10px 0 }
+#delModal .modal-title .glyphicon{top:4px}
+/*底部切换*/
+.f-switch{position: absolute;right:20px;bottom:0;}
+.f-exif{width:41px;height:13px;background-position: 0 -99px;}
+.f-contrast{width:15px;height:13px;background-position: -33px 0;}
+.f-preview{width:17px;height: 17px;background-position:-31px -16px;top:3px;}
+
+/*背景渐变*/
+.f-gradient{
+    border: 1px solid #e2e2e2;
+}
+.f-gradient,#f-gradient,.f-resStyle > thead > tr{
+    background: -moz-linear-gradient(top,#ffffff, #e2e2e2 80%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e2e2e2));
+    background: -ms-linear-gradient(top,#ffffff, #e2e2e2 80%);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e2e2e2');/* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e2e2e2')";/* IE8 */
+}
+/*阴影*/
+.f-box{border: 1px solid #eaeaea;box-shadow: 3px 3px 3px rgba(220,220,220,0.8);}
+table>thead>tr>th{
+    text-align: center;
+}
+/*透明按钮*/
+.t-btn{
+    border: 2px solid #ededed;
+    background-color: transparent;
+    box-shadow: 0px 2px 2px #c0c0c0;
+    color: #000;
+    padding: 3px 12px;
+}
+.f-table>thead>tr {
+    background: #cfcfcf;
+    color: #424242;
+}
+/*提示弹窗*/
+#lbOverlay {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#lbCenter {
+    position: absolute;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+    text-align: center;
+    padding: 15px;
+    width: 400px;
+}
+#fdiag{display:none;z-index:100000}
+
